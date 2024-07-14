@@ -1,0 +1,7 @@
+services:
+  streamer:
+    image: tastreamer:latest
+    container_name: ta_streamer
+    ports:
+      - 8989:8989
+  
