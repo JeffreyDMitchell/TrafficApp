@@ -1,0 +1,3 @@
+[submodule "Analyzer/app"]
+	path = Analyzer/app
+	url = https://github.com/JeffreyDMitchell/Multi-Camera-Live-Object-Tracking
