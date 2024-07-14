@@ -1,15 +1,12 @@
 #!/bin/bash
 
 terminate() {
-    echo "Terminating gracefully..."
-
     kill -SIGTERM "$FFMPEG_PID"
     kill -SIGTERM "$HTTP_SERVER_PID"
 
     wait "$FFMPEG_PID"
     wait "$HTTP_SERVER_PID"
 
-    echo "Processes terminated gracefully."
     exit 0
 }
 
